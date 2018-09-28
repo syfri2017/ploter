@@ -1,0 +1,463 @@
+[{
+    "type": "facilities",
+    "typeName": "消防设施",
+    "category": [{
+            "name": "facilities_evacuate",
+            "title": "疏散",
+            "children": [{
+                    "name": "安全出口",
+                    "id": "facilities_evacuate_aqck",
+                    "src": "static/images/plot/tools/facilities/aqck",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "疏散楼梯",
+                    "id": "facilities_evacuate_sslt",
+                    "src": "static/images/plot/tools/facilities/sslt",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "消防电梯",
+                    "id": "facilities_evacuate_xfdt",
+                    "src": "static/images/plot/tools/facilities/xfdt",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "普通电梯",
+                    "id": "facilities_evacuate_ptdt",
+                    "src": "static/images/plot/tools/facilities/ptdt",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "facilities_water",
+            "title": "水",
+            "children": [{
+                    "name": "固定水炮",
+                    "id": "facilities_water_gdsp",
+                    "src": "static/images/plot/tools/facilities/gdsp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "消防泵房",
+                    "id": "facilities_water_xfbf",
+                    "src": "static/images/plot/tools/facilities/xfbf",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "消防水箱",
+                    "id": "facilities_water_xfsx",
+                    "src": "static/images/plot/tools/facilities/xfsx",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "消防水鹤",
+                    "id": "facilities_water_xfsh",
+                    "src": "static/images/plot/tools/facilities/xfsh",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "天然水源取水点",
+                    "id": "facilities_water_trsyqsd",
+                    "src": "static/images/plot/tools/facilities/trsyqsd",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "消防水池",
+                    "id": "facilities_water_xfsc",
+                    "src": "static/images/plot/tools/facilities/xfsc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "室内消火栓",
+                    "id": "facilities_water_snxhs",
+                    "src": "static/images/plot/tools/facilities/snxhs",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "室外消火栓",
+                    "id": "facilities_water_swxhs",
+                    "src": "static/images/plot/tools/facilities/swxhs",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "水泵接合器",
+                    "id": "facilities_water_sbjhq",
+                    "src": "static/images/plot/tools/facilities/sbjhq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "半固定水设施",
+                    "id": "facilities_water_bgdsss",
+                    "src": "static/images/plot/tools/facilities/bgdsss",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "facilities_foam",
+            "title": "泡沫",
+            "children": [{
+                    "name": "泡沫泵房",
+                    "id": "facilities_foam_pmbf",
+                    "src": "static/images/plot/tools/facilities/pmbf",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "泡沫消火栓",
+                    "id": "facilities_foam_pmxhs",
+                    "src": "static/images/plot/tools/facilities/pmxhs",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "固定泡沫炮",
+                    "id": "facilities_foam_gdpmp",
+                    "src": "static/images/plot/tools/facilities/gdpmp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "泡沫发生器",
+                    "id": "facilities_foam_pmfsq",
+                    "src": "static/images/plot/tools/facilities/pmfsq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "高倍泡沫发生器",
+                    "id": "facilities_foam_gbpmfsq",
+                    "src": "static/images/plot/tools/facilities/gbpmfsq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "facilities_steam",
+            "title": "蒸汽",
+            "children": [{
+                    "name": "固定蒸汽设施",
+                    "id": "facilities_steam_gdzqss",
+                    "src": "static/images/plot/tools/facilities/gdzqss",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "半固定蒸汽设施",
+                    "id": "facilities_steam_bgdzqss",
+                    "src": "static/images/plot/tools/facilities/bgdzqss",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "facilities_xfkzs",
+            "title": "消控室",
+            "children": [{
+                "name": "消防控制室",
+                "id": "facilities_xfkzs",
+                "src": "static/images/plot/tools/facilities/xfkzs",
+                "type": "icon",
+                "style": {
+                    "mainShape": {},
+                    "textShape": {
+                        "text": "",
+                        "fontFamily": "simsun",
+                        "fill": "red",
+                        "angleFixed": false
+                    }}
+            }]
+        },
+        {
+            "name": "facilities_smoke",
+            "title": "防排烟",
+            "children": [{
+                    "name": "排烟口",
+                    "id": "facilities_smoke_pyk",
+                    "src": "static/images/plot/tools/facilities/pyk",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "送风口",
+                    "id": "facilities_smoke_sfk",
+                    "src": "static/images/plot/tools/facilities/sfk",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "facilities_area",
+            "title": "防火分区",
+            "children": [{
+                    "name": "防火分区",
+                    "id": "facilities_area_fhfq",
+                    "src": "static/images/plot/tools/facilities/fhfq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "防火分割",
+                    "id": "facilities_area_fhfg",
+                    "src": "static/images/plot/tools/facilities/fhfg",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "facilities_other",
+            "title": "其他",
+            "children": [{
+                    "name": "气体灭火系统作用区域",
+                    "id": "facilities_other_qtmhxtzyqy",
+                    "src": "static/images/plot/tools/facilities/qtmhxtzyqy",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "干粉灭火系统作用区域",
+                    "id": "facilities_other_gfmhxyzyqy",
+                    "src": "static/images/plot/tools/facilities/gfmhxyzyqy",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}]

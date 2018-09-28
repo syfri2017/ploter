@@ -1,0 +1,67 @@
+[
+  {
+    "type": "legend",
+    "typeName": "图例",
+    "category": [
+      {
+        "name": "legend",
+        "title": "图例",
+        "children": [
+          {
+            "name": "图例",
+            "id": "legend",
+            "src": "static/images/plot/tools/legend/legend",
+            "type": "legend",
+            "style": {
+              "lineHeight": 24,
+              "paddingLeftIcon": 16,
+              "paddingLeftText": 6,
+              "lineMaxWidth": 210,
+              "mainShape": {
+                "name": "mainShape",
+                "stroke": "#555",
+                "strokeWidth": 2,
+                "fill": "#F9F9F9",
+                "dashEnabled": false,
+                "shadowColor": "black",
+                "shadowBlur": 10,
+                "shadowOffset": [
+                  10,
+                  10
+                ],
+                "shadowOpacity": 0.2,
+                "cornerRadius": 2
+              },
+              "iconShape": {
+                "name": "fillicon",
+                "width": 16,
+                "height": 16,
+                "draggable": false
+              },
+              "textShape": {
+                "name": "textShape",
+                "fontSize": 12,
+                "fontFamily": "simsun",
+                "fill": "#555"
+              }
+            }
+          },
+          {
+            "name": "地图",
+            "id": "map",
+            "src": "static/images/plot/tools/legend/legend",
+            "type": "map",
+            "style": {
+              "mainShape": {
+              },
+              "iconShape": {
+              },
+              "textShape": {
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

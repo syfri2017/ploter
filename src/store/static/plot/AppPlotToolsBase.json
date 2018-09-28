@@ -1,0 +1,197 @@
+[{
+    "type": "base",
+    "typeName": "一般符号",
+    "category": [{
+            "name": "base_line",
+            "title": "线",
+            "children": [{
+                    "name": "直线",
+                    "id": "base_line_zx",
+                    "src": "static/images/plot/tools/base/zx",
+                    "type": "line",
+                    "style": {
+                        "shapeType": "straight",
+                        "mainShape": {
+                            "strokeWidth": 4,
+                            "stroke": "red",
+                            "lineCap": "round"
+                        }
+                    }
+                },
+                {
+                    "name": "曲线",
+                    "id": "base_line_qx",
+                    "src": "static/images/plot/tools/base/qx",
+                    "type": "line",
+                    "style": {
+                        "shapeType": "curve",
+                        "mainShape": {
+                            "strokeWidth": 4,
+                            "stroke": "red",
+                            "lineCap": "round"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "base_geometric",
+            "title": "图形",
+            "children": [
+                {
+                    "name": "椭圆形",
+                    "id": "base_graphical_tyx",
+                    "src": "static/images/plot/tools/base/tyx",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "ellipse",
+                        "mainShape": {
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "fill": "#ffffff",
+                            "fillPriority": "color"
+                        }
+                    }
+                },
+                {
+                    "name": "多边形",
+                    "id": "base_graphical_dbx",
+                    "src": "static/images/plot/tools/base/dbx",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "polygon",
+                        "mainShape": {
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "lineCap": "round",
+                            "fill": "#ffffff",
+                            "fillPriority": "color"
+                        }
+                    }
+                },
+                {
+                    "name": "矩形",
+                    "id": "base_graphical_jx",
+                    "src": "static/images/plot/tools/base/jx",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "rectangle",
+                        "mainShape": {
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "fill": "#ffffff",
+                            "fillPriority": "color"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "base_text",
+            "title": "文字",
+            "children": [
+                {
+                    "name": "标注框",
+                    "id": "base_text_bzk",
+                    "src": "static/images/plot/tools/base/bzk",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "rectangle",
+                        "textShape": {
+                            "text": "标注内容",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "fontSize": 12
+                        },
+                        "mainShape": {
+                            "stroke": "red",
+                            "strokeWidth": 2,
+                            "fill": "rgba(255,255,255,1)",
+                            "fillPriority": "color"
+                        }
+                    }
+                },
+                {
+                    "name": "矩形文本框",
+                    "id": "base_text_jxwbk",
+                    "src": "static/images/plot/tools/base/jxwbk",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "rectangle",
+                        "textShape": {
+                            "text": "文字内容",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "fontSize": 12,
+                            "padding": 4
+                        },
+                        "mainShape": {
+                            "stroke": "red",
+                            "strokeWidth": 2,
+                            "fill": "#ffffff",
+                            "fillPriority": "color"
+                        }
+                    }
+                },
+                {
+                    "name": "椭圆文本框",
+                    "id": "base_text_tywbk",
+                    "src": "static/images/plot/tools/base/tywbk",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "ellipse",
+                        "textShape": {
+                            "text": "文字内容",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "fontSize": 12,
+                            "padding": 10
+                        },
+                        "mainShape": {
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "fill": "#ffffff",
+                            "fillPriority": "color"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "base_arrow",
+            "title": "箭头",
+            "children": [{
+                    "name": "箭头线",
+                    "id": "base_arrow_jtx",
+                    "src": "static/images/plot/tools/base/jtx",
+                    "type": "arrowLine",
+                    "style": {
+                        "mainShape": {
+                            "name": "moftNormalArrow",
+                            "width": 10,
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "maxPointCount": 2
+                        }
+                    }
+                },
+                {
+                    "name": "燕尾箭头线",
+                    "id": "base_arrow_ywjtx",
+                    "src": "static/images/plot/tools/base/ywjtx",
+                    "type": "arrowLine",
+                    "style": {
+                        "mainShape": {
+                            "name": "moftSwallowArrow",
+                            "width": 10,
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "height": 5,
+                            "maxPointCount": 2
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}]

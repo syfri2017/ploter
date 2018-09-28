@@ -1,0 +1,265 @@
+[{
+    "type": "hazards",
+    "typeName": "危险源",
+    "category": [{
+            "name": "hazards_fire",
+            "title": "易燃易爆",
+            "children": [{
+                    "name": "易燃气体",
+                    "id": "hazards_fire_yrqt",
+                    "src": "static/images/plot/tools/hazards/yrqt",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "爆炸品",
+                    "id": "hazards_fire_bzp",
+                    "src": "static/images/plot/tools/hazards/bzp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "易燃液体",
+                    "id": "hazards_fire_yryt",
+                    "src": "static/images/plot/tools/hazards/yryt",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "自燃物品",
+                    "id": "hazards_fire_zrwp",
+                    "src": "static/images/plot/tools/hazards/zrwp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "遇湿易燃物品",
+                    "id": "hazards_fire_ysyrwp",
+                    "src": "static/images/plot/tools/hazards/ysyrwp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "易燃固体",
+                    "id": "hazards_fire_yrgt",
+                    "src": "static/images/plot/tools/hazards/yrgt",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "hazards_toxin",
+            "title": "毒",
+            "children": [{
+                    "name": "剧毒品",
+                    "id": "hazards_toxin_jdp",
+                    "src": "static/images/plot/tools/hazards/jdp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "有毒品",
+                    "id": "hazards_toxin_ydp",
+                    "src": "static/images/plot/tools/hazards/ydp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "有毒气体",
+                    "id": "hazards_toxin_ydqt",
+                    "src": "static/images/plot/tools/hazards/ydqt",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "hazards_radioactivity",
+            "title": "放射性",
+            "children": [{
+                    "name": "一级放射性物品",
+                    "id": "hazards_radioactivity_yjfsxwp",
+                    "src": "static/images/plot/tools/hazards/yjfsxwp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "二级放射性物品",
+                    "id": "hazards_radioactivity_ejfsxwp",
+                    "src": "static/images/plot/tools/hazards/ejfsxwp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "三级放射性物品",
+                    "id": "hazards_radioactivity_sjfsxwp",
+                    "src": "static/images/plot/tools/hazards/sjfsxwp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "hazards_other",
+            "title": "其他",
+            "children": [{
+                    "name": "不燃气体",
+                    "id": "hazards_other_brqt",
+                    "src": "static/images/plot/tools/hazards/brqt",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "氧化剂",
+                    "id": "hazards_other_yhj",
+                    "src": "static/images/plot/tools/hazards/yhj",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "腐蚀品",
+                    "id": "hazards_other_fsp",
+                    "src": "static/images/plot/tools/hazards/fsp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "有机过氧化物",
+                    "id": "hazards_other_yjgyhw",
+                    "src": "static/images/plot/tools/hazards/yjgyhw",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}]

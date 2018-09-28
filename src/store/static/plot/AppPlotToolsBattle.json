@@ -1,0 +1,231 @@
+[{
+    "type": "battle",
+    "typeName": "战斗行动",
+    "category": [{
+            "name": "battle_line",
+            "title": "路线",
+            "children": [{
+                    "name": "进攻路线",
+                    "id": "battle_line_jglx",
+                    "src": "static/images/plot/tools/battle/jglx",
+                    "type": "arrowLine",
+                    "style": {
+                        "mainShape": {
+                            "name": "moftNormal",
+                            "width": 30,
+                            "space": 10,
+                            "fill": "red"
+                        }
+                    }
+
+                },
+                {
+                    "name": "进攻路线（备用）",
+                    "id": "battle_line_jglx_b",
+                    "src": "static/images/plot/tools/battle/jglx_b",
+                    "type": "arrowLine",
+                    "style": {
+                        "mainShape": {
+                            "name": "moftSpare",
+                            "width": 30,
+                            "stroke": "red",
+                            "space": 10,
+                            "strokeWidth": 1
+                        }
+
+                    }
+                },
+                {
+                    "name": "撤退路线",
+                    "id": "battle_line_ctlx",
+                    "src": "static/images/plot/tools/battle/ctlx",
+                    "type": "arrowLine",
+                    "style": {
+                        "mainShape": {
+                            "name": "moftNormal",
+                            "width": 30,
+                            "space": 10,
+                            "fill": "rgb(0,208,7)"
+                        }
+
+                    }
+                },
+                {
+                    "name": "撤退路线（备用）",
+                    "id": "battle_line_ctlx_b",
+                    "src": "static/images/plot/tools/battle/ctlx_b",
+                    "type": "arrowLine",
+                    "style": {
+                        "mainShape": {
+                            "name": "moftSpare",
+                            "width": 30,
+                            "stroke": "rgb(0,208,7)",
+                            "space": 10,
+                            "strokeWidth": 1
+                        }
+                    }
+                },
+                {
+                    "name": "疏散路线",
+                    "id": "battle_line_sslx",
+                    "src": "static/images/plot/tools/battle/sslx",
+                    "type": "arrowLine",
+                    "style": {
+                        "mainShape": {
+                            "name": "moftEvacuate",
+                            "width": 30,
+                            "stroke": "blue",
+                            "strokeWidth": 4
+                        }
+                    }
+                },
+                {
+                    "name": "疏散路线（备用）",
+                    "id": "battle_line_sslx_b",
+                    "src": "static/images/plot/tools/battle/sslx_b",
+                    "type": "arrowLine",
+                    "style": {
+                        "mainShape": {
+                            "name": "moftEvacuateSpare",
+                            "width": 30,
+                            "stroke": "blue",
+                            "strokeWidth": 4,
+                            "space": 10
+                        }
+                    }
+                },
+                {
+                    "name": "搜救路线",
+                    "id": "battle_line_sjlx",
+                    "src": "static/images/plot/tools/battle/sjlx",
+                    "type": "arrowLine",
+                    "style": {
+                        "mainShape": {
+                            "name": "moftSearch",
+                            "width": 10,
+                            "stroke": "blue",
+                            "space": 20,
+                            "strokeWidth": 4
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "battle_area",
+            "title": "区域",
+            "children": [{
+                    "name": "车辆集结区",
+                    "id": "battle_area_cljjq",
+                    "src": "static/images/plot/tools/battle/cljjq",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "rectangle",
+                        "mainShape": {
+                            "backgroundImage": {
+                                "src": "data:image/svg+xml;utf8,<svg version='1.1' width='32' height='32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 32 32' style='enable-background:new 0 0 32 32;' xml:space='preserve'><style type='text/css'>.st0{fill:red;stroke:red;stroke-width:1;stroke-miterlimit:10;}</style><polygon class='st0' points='16,19.5 10.8,28.5 21.2,28.5 '/><polygon class='st0' points='16,12.5 21.2,3.5 10.8,3.5 '/><polygon class='st0' points='19.5,16 28.5,21.2 28.5,10.8 '/><polygon class='st0' points='12.5,16 3.5,10.8 3.5,21.2 '/></svg>",
+                                "fill": "red",
+                                "stroke": "red",
+                                "width": 32,
+                                "height": 32
+                            },
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "fill": "#ffffff",
+                            "fillPriority": "color",
+                            "fillPatternRepeat": "no-repeat"
+                        }
+                    }
+                },
+                {
+                    "name": "装备集结区",
+                    "id": "battle_area_zbjjq",
+                    "src": "static/images/plot/tools/battle/zbjjq",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "rectangle",
+                        "mainShape": {
+                            "backgroundImage": {
+                                "src": "data:image/svg+xml;utf8,<svg version='1.1' width='32' height='32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 32 32' style='enable-background:new 0 0 32 32;' xml:space='preserve'><style type='text/css'>.st0{fill:red;stroke:red;stroke-width:1;stroke-miterlimit:10;}</style><polygon class='st0' points='16,4.8 3,27.3 29,27.3 '/></svg>",
+                                "fill": "red",
+                                "stroke": "red",
+                                "width": 32,
+                                "height": 32
+                            },
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "fill": "#ffffff",
+                            "fillPriority": "color",
+                            "fillPatternRepeat": "no-repeat"
+                        }
+                    }
+                },
+                {
+                    "name": "堵截阵地",
+                    "id": "battle_area_djzd",
+                    "src": "static/images/plot/tools/battle/djzd",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "rectangle",
+                        "mainShape": {
+                            "backgroundImage": {
+                                "src": "data:image/svg+xml;utf8,<svg version='1.1' width='32' height='32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 32 32' style='enable-background:new 0 0 32 32;' xml:space='preserve'><style type='text/css'>.st0{fill:red;stroke:red;stroke-width:1;stroke-miterlimit:10;}</style><line class='st0' x1='0' y1='3' x2='32' y2='3'/><polygon class='st0' points='17.8,9.8 16,6.8 14.3,9.8 15.2,9.8 15.2,13.3 16.8,13.3 16.8,9.8 '/><polygon class='st0' points='24.8,10.3 21.4,9.4 22.3,12.8 23,12.1 25.5,14.6 26.6,13.5 24.1,11 '/><polygon class='st0' points='9.7,12.8 10.6,9.4 7.2,10.3 7.9,11 5.4,13.5 6.5,14.6 9,12.1 '/></svg>",
+                                "fill": "red",
+                                "stroke": "red",
+                                "width": 32,
+                                "height": 32
+
+                            },
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "fill": "#ffffff",
+                            "fillPriority": "color",
+                            "fillPatternRepeat": "no-repeat"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "battle_direction",
+            "title": "方向",
+            "children": [{
+                    "name": "指北针",
+                    "id": "battle_direction_zbz",
+                    "src": "static/images/plot/tools/battle/zbz",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 80,
+                            "height": 80
+                        },
+                        "textShape": {
+                            "text": "",
+                            "fill": "red",
+                            "fontFamily": "simsun",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "风力风向",
+                    "id": "battle_direction_flfx",
+                    "src": "static/images/plot/tools/battle/flfx",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "3",
+                            "fill": "red",
+                            "fontFamily": "simsun",
+                            "angleFixed": true
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}]

@@ -1,0 +1,1112 @@
+[{
+    "type": "vehicles",
+    "typeName": "车辆",
+    "category": [{
+            "name": "vehicles_fire",
+            "title": "灭火",
+            "children": [{
+                    "name": "泡沫车",
+                    "id": "vehicles_fire_pmc",
+                    "src": "static/images/plot/tools/vehicles/pmc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "泡沫车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "泡沫车（大流量）",
+                    "id": "vehicles_fire_pmc_l",
+                    "src": "static/images/plot/tools/vehicles/pmc_l",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "泡沫车（大流量）",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "水罐车",
+                    "id": "vehicles_fire_sgc",
+                    "src": "static/images/plot/tools/vehicles/sgc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "水罐车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "水罐车（重型）",
+                    "id": "vehicles_fire_sgc_l",
+                    "src": "static/images/plot/tools/vehicles/sgc_l",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "水罐车（重型）",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "二氧化碳消防车",
+                    "id": "vehicles_fire_eyhtxfc",
+                    "src": "static/images/plot/tools/vehicles/eyhtxfc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "二氧化碳消防车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "泡沫干粉联用车",
+                    "id": "vehicles_fire_pmgflyc",
+                    "src": "static/images/plot/tools/vehicles/pmgflyc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "泡沫干粉联用车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "干粉车",
+                    "id": "vehicles_fire_gfc",
+                    "src": "static/images/plot/tools/vehicles/gfc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "干粉车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "压缩空气泡沫车",
+                    "id": "vehicles_fire_yskqpmc",
+                    "src": "static/images/plot/tools/vehicles/yskqpmc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "压缩空气泡沫车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "三相射流车",
+                    "id": "vehicles_fire_sxslc",
+                    "src": "static/images/plot/tools/vehicles/sxslc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "三相射流车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "液氮消防车",
+                    "id": "vehicles_fire_ydxfc",
+                    "src": "static/images/plot/tools/vehicles/ydxfc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "液氮消防车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "高喷车",
+                    "id": "vehicles_fire_gpc",
+                    "src": "static/images/plot/tools/vehicles/gpc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "高喷车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "三相射流高喷车",
+                    "id": "vehicles_fire_sxslgpc",
+                    "src": "static/images/plot/tools/vehicles/sxslgpc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "三相射流高喷车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "涡喷消防车",
+                    "id": "vehicles_fire_wpxfc",
+                    "src": "static/images/plot/tools/vehicles/wpxfc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "涡喷消防车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "高倍泡沫车",
+                    "id": "vehicles_fire_gbpmc",
+                    "src": "static/images/plot/tools/vehicles/gbpmc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "高倍泡沫车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "vehicles_height",
+            "title": "登高",
+            "children": [{
+                    "name": "曲臂登高车",
+                    "id": "vehicles_height_qbdgc",
+                    "src": "static/images/plot/tools/vehicles/qbdgc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "曲臂登高车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "直臂登高车（云梯）",
+                    "id": "vehicles_height_zbdgc_yt",
+                    "src": "static/images/plot/tools/vehicles/zbdgc_yt",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "直臂登高车（云梯）",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "vehicles_supply",
+            "title": "供给",
+            "children": [
+                {
+                    "name": "远程供水车（水泵）",
+                    "id": "vehicles_supply_ycgsc_sb",
+                    "src": "static/images/plot/tools/vehicles/ycgsc_sb",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "远程供水车（水泵）",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "远程供水车（水带铺设）",
+                    "id": "vehicles_supply_ycgsc_sdps",
+                    "src": "static/images/plot/tools/vehicles/ycgsc_sdps",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "远程供水车（水带铺设）",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "移动供气车",
+                    "id": "vehicles_supply_ydgqc",
+                    "src": "static/images/plot/tools/vehicles/ydgqc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "移动供气车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "泡沫供液车",
+                    "id": "vehicles_supply_pmgyc",
+                    "src": "static/images/plot/tools/vehicles/pmgyc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "泡沫供液车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "油料供给车",
+                    "id": "vehicles_supply_ylgjc",
+                    "src": "static/images/plot/tools/vehicles/ylgjc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "油料供给车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "vehicles_special",
+            "title": "特殊",
+            "children": [{
+                    "name": "抢险救援车",
+                    "id": "vehicles_special_qxjyc",
+                    "src": "static/images/plot/tools/vehicles/qxjyc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "抢险救援车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "排烟车",
+                    "id": "vehicles_special_pyc",
+                    "src": "static/images/plot/tools/vehicles/pyc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "排烟车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "排烟照明车",
+                    "id": "vehicles_special_pyzmc",
+                    "src": "static/images/plot/tools/vehicles/pyzmc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "排烟照明车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "照明车",
+                    "id": "vehicles_special_zmc",
+                    "src": "static/images/plot/tools/vehicles/zmc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "照明车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "防化洗消车",
+                    "id": "vehicles_special_fhxxc",
+                    "src": "static/images/plot/tools/vehicles/fhxxc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "防化洗消车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "破拆车",
+                    "id": "vehicles_special_pcc",
+                    "src": "static/images/plot/tools/vehicles/pcc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "破拆车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "挖掘车",
+                    "id": "vehicles_special_wjc",
+                    "src": "static/images/plot/tools/vehicles/wjc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "挖掘车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "铲车",
+                    "id": "vehicles_special_cc",
+                    "src": "static/images/plot/tools/vehicles/cc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "铲车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "侦检车",
+                    "id": "vehicles_special_zjc",
+                    "src": "static/images/plot/tools/vehicles/zjc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "侦检车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "通讯指挥车",
+                    "id": "vehicles_special_txzhc",
+                    "src": "static/images/plot/tools/vehicles/txzhc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "通讯指挥车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "指挥车",
+                    "id": "vehicles_special_zhc",
+                    "src": "static/images/plot/tools/vehicles/zhc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "指挥车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "吊车",
+                    "id": "vehicles_special_dc",
+                    "src": "static/images/plot/tools/vehicles/dc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "吊车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "排障车（清障车）",
+                    "id": "vehicles_special_pzc_qzc",
+                    "src": "static/images/plot/tools/vehicles/pzc_qzc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "排障车（清障车）",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "vehicles_support",
+            "title": "后勤",
+            "children": [
+                {
+                    "name": "装备抢修车",
+                    "id": "vehicles_support_zbqxc",
+                    "src": "static/images/plot/tools/vehicles/zbqxc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "装备抢修车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "运兵车",
+                    "id": "vehicles_support_ybc",
+                    "src": "static/images/plot/tools/vehicles/ybc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "运兵车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "运输车",
+                    "id": "vehicles_support_ysc",
+                    "src": "static/images/plot/tools/vehicles/ysc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "运输车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "炊事车",
+                    "id": "vehicles_support_csc",
+                    "src": "static/images/plot/tools/vehicles/csc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "炊事车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "战勤保障车",
+                    "id": "vehicles_support_zqbzc",
+                    "src": "static/images/plot/tools/vehicles/zqbzc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "战勤保障车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "vehicles_linkage",
+            "title": "联动",
+            "children": [
+                {
+                    "name": "急救车",
+                    "id": "vehicles_linkage_jjc",
+                    "src": "static/images/plot/tools/vehicles/jjc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "急救车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "警用指挥车",
+                    "id": "vehicles_linkage_jyzhc",
+                    "src": "static/images/plot/tools/vehicles/jyzhc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "警用指挥车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "警用巡逻车",
+                    "id": "vehicles_linkage_jyxlc",
+                    "src": "static/images/plot/tools/vehicles/jyxlc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "警用巡逻车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "警用摩托车",
+                    "id": "vehicles_linkage_jymtc",
+                    "src": "static/images/plot/tools/vehicles/jymtc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "警用摩托车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "电力抢修车",
+                    "id": "vehicles_linkage_dlqxc",
+                    "src": "static/images/plot/tools/vehicles/dlqxc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "电力抢修车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "水力抢修车",
+                    "id": "vehicles_linkage_slqxc",
+                    "src": "static/images/plot/tools/vehicles/slqxc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "水力抢修车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "燃气抢修车",
+                    "id": "vehicles_linkage_rqqxc",
+                    "src": "static/images/plot/tools/vehicles/rqqxc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "燃气抢修车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "特种工程车",
+                    "id": "vehicles_linkage_tzgcc",
+                    "src": "static/images/plot/tools/vehicles/tzgcc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "特种工程车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "环保监测车",
+                    "id": "vehicles_linkage_hbjcc",
+                    "src": "static/images/plot/tools/vehicles/hbjcc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "环保监测车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "vehicles_ship",
+            "title": "船舰",
+            "children": [
+                {
+                    "name": "消防舰（大型）",
+                    "id": "vehicles_ship_xfj_l",
+                    "src": "static/images/plot/tools/vehicles/xfj_l",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "消防舰（大型）",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "消防拖轮",
+                    "id": "vehicles_ship_xftl",
+                    "src": "static/images/plot/tools/vehicles/xftl",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "消防拖轮",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "消防指挥艇",
+                    "id": "vehicles_ship_xfzht",
+                    "src": "static/images/plot/tools/vehicles/xfzht",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "消防指挥艇",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "消防艇（小型）",
+                    "id": "vehicles_ship_xft_s",
+                    "src": "static/images/plot/tools/vehicles/xft_s",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "消防艇（小型）",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "vehicles_social",
+            "title": "社会",
+            "children": [
+                {
+                    "name": "小型轿车",
+                    "id": "vehicles_social_xxjc",
+                    "src": "static/images/plot/tools/vehicles/xxjc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "小型轿车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "中型客车",
+                    "id": "vehicles_social_kc_m",
+                    "src": "static/images/plot/tools/vehicles/kc_m",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "中型客车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "大型客车",
+                    "id": "vehicles_social_kc_l",
+                    "src": "static/images/plot/tools/vehicles/kc_l",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "大型客车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "重型货车",
+                    "id": "vehicles_social_hc_l",
+                    "src": "static/images/plot/tools/vehicles/hc_l",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "重型货车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "中型货车",
+                    "id": "vehicles_social_hc_m",
+                    "src": "static/images/plot/tools/vehicles/hc_m",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "中型货车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "中型储罐车",
+                    "id": "vehicles_social_cgc_m",
+                    "src": "static/images/plot/tools/vehicles/cgc_m",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "中型储罐车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "大型储罐车",
+                    "id": "vehicles_social_cgc_l",
+                    "src": "static/images/plot/tools/vehicles/cgc_l",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "大型储罐车",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}]

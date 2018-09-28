@@ -1,0 +1,444 @@
+[{
+    "type": "equipments",
+    "typeName": "消防器材",
+    "category": [{
+            "name": "equipments_evacuate",
+            "title": "疏散",
+            "children": [{
+                    "name": "隔离警示带",
+                    "id": "equipments_evacuate_gljsd",
+                    "src": "static/images/plot/tools/equipments/gljsd",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "移动照明灯组",
+                    "id": "equipments_evacuate_ydzmdz",
+                    "src": "static/images/plot/tools/equipments/ydzmdz",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "移动发电机",
+                    "id": "equipments_evacuate_ydfdj",
+                    "src": "static/images/plot/tools/equipments/ydfdj",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "闪光警示灯",
+                    "id": "equipments_evacuate_sgjsd",
+                    "src": "static/images/plot/tools/equipments/sgjsd",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "危险警示牌",
+                    "id": "equipments_evacuate_wxjsp",
+                    "src": "static/images/plot/tools/equipments/wxjsp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "警戒标识柱（杆）",
+                    "id": "equipments_evacuate_jjbsz",
+                    "src": "static/images/plot/tools/equipments/jjbsz",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "出入口标识牌",
+                    "id": "equipments_evacuate_crkbsp",
+                    "src": "static/images/plot/tools/equipments/crkbsp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "equipments_water",
+            "title": "水",
+            "children": [{
+                    "name": "喷雾水枪",
+                    "id": "equipments_water_pwsq",
+                    "src": "static/images/plot/tools/equipments/pwsq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "喷雾水枪",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "开花水枪",
+                    "id": "equipments_water_khsq",
+                    "src": "static/images/plot/tools/equipments/khsq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "开花水枪",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "直流水枪",
+                    "id": "equipments_water_zlsq",
+                    "src": "static/images/plot/tools/equipments/zlsq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "直流水枪",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "移动水炮",
+                    "id": "equipments_water_ydsp",
+                    "src": "static/images/plot/tools/equipments/ydsp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "移动水炮",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "自摆水炮",
+                    "id": "equipments_water_zbsp",
+                    "src": "static/images/plot/tools/equipments/zbsp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "自摆水炮",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "分水器",
+                    "id": "equipments_water_fsq",
+                    "src": "static/images/plot/tools/equipments/fsq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "集水器",
+                    "id": "equipments_water_jsq",
+                    "src": "static/images/plot/tools/equipments/jsq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "水带（65mm）",
+                    "id": "equipments_water_sd65mm",
+                    "src": "static/images/plot/tools/equipments/sd65mm",
+                    "type": "line",
+                    "style": {
+                        "shapeType": "straight",
+                        "mainShape": {
+                            "strokeWidth": 4,
+                            "stroke": "#30cfff",
+                            "lineCap": "round"
+                        }
+                    }
+                },
+                {
+                    "name": "水带（80mm）",
+                    "id": "equipments_water_sd80mm",
+                    "src": "static/images/plot/tools/equipments/sd80mm",
+                    "type": "line",
+                    "style": {
+                        "shapeType": "straight",
+                        "mainShape": {
+                            "strokeWidth": 6,
+                            "stroke": "#30a9ff",
+                            "lineCap": "round"
+                        }
+                    }
+                },
+                {
+                    "name": "水带（300mm）",
+                    "id": "equipments_water_sd300mm",
+                    "src": "static/images/plot/tools/equipments/sd300mm",
+                    "type": "line",
+                    "style": {
+                        "shapeType": "straight",
+                        "mainShape": {
+                            "strokeWidth": 8,
+                            "stroke": "#305dff",
+                            "lineCap": "round"
+                        }
+                    }
+                },
+                {
+                    "name": "浮艇泵",
+                    "id": "equipments_water_ftb",
+                    "src": "static/images/plot/tools/equipments/ftb",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "手抬机动泵",
+                    "id": "equipments_water_stjdb",
+                    "src": "static/images/plot/tools/equipments/stjdb",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "equipments_foam",
+            "title": "泡沫",
+            "children": [{
+                    "name": "泡沫枪",
+                    "id": "equipments_foam_pmq",
+                    "src": "static/images/plot/tools/equipments/pmq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "泡沫枪",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "压缩空气泡沫枪",
+                    "id": "equipments_foam_yskqpmq",
+                    "src": "static/images/plot/tools/equipments/yskqpmq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "压缩空气泡沫枪",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "移动泡沫枪",
+                    "id": "equipments_foam_ydpmq",
+                    "src": "static/images/plot/tools/equipments/ydpmq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "移动泡沫枪",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "自摆泡沫炮",
+                    "id": "equipments_foam_zbpmp",
+                    "src": "static/images/plot/tools/equipments/zbpmp",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "自摆泡沫炮",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "泡沫钩管",
+                    "id": "equipments_foam_pmgg",
+                    "src": "static/images/plot/tools/equipments/pmgg",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "中倍泡沫发生器",
+                    "id": "equipments_foam_zbpmfsq",
+                    "src": "static/images/plot/tools/equipments/zbpmfsq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "高倍泡沫发生器",
+                    "id": "equipments_foam_gbpmfsq",
+                    "src": "static/images/plot/tools/equipments/gbpmfsq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "equipments_smoke",
+            "title": "防排烟",
+            "children": [{
+                    "name": "移动排烟机",
+                    "id": "equipments_smoke_ydpyj",
+                    "src": "static/images/plot/tools/equipments/ydpyj",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "空气输送机",
+                    "id": "equipments_smoke_kqssj",
+                    "src": "static/images/plot/tools/equipments/kqssj",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}]

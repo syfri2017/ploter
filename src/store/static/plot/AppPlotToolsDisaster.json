@@ -1,0 +1,174 @@
+[{
+    "type": "disaster",
+    "typeName": "灾情设置",
+    "category": [{
+            "name": "disaster_point",
+            "title": "点",
+            "children": [{
+                    "name": "着火点",
+                    "id": "disaster_point_hd",
+                    "src": "static/images/plot/tools/disaster/hd",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "着火点",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "气体泄漏点",
+                    "id": "disaster_point_qtxld",
+                    "src": "static/images/plot/tools/disaster/qtxld",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "气体泄漏点",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "液体泄漏点",
+                    "id": "disaster_point_ytxld",
+                    "src": "static/images/plot/tools/disaster/ytxld",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {},
+                        "textShape": {
+                            "text": "液体泄漏点",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "disaster_area",
+            "title": "区域",
+            "children": [{
+                    "name": "过火区域",
+                    "id": "disaster_area_ghqy",
+                    "src": "static/images/plot/tools/disaster/ghqy",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "rectangle",
+                        "mainShape": {
+                            "backgroundImage": {
+                                "src": "data:image/svg+xml;utf8,<svg version='1.1' width='16' height='16' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16;' xml:space='preserve'><style type='text/css'>.st0{fill:none;stroke:grey;stroke-width:2;stroke-miterlimit:10;}</style><rect class='st0' width='16' height='16'/></svg>",
+                                "fill": "none",
+                                "stroke": "grey",
+                                "width": 16,
+                                "height": 16
+                            },
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "fill": "#ffffff",
+                            "fillPatternRotation": 45,
+                            "fillPatternRepeat": "repeat",
+                            "fillPriority": "pattern"
+                        }
+                    }
+                },
+                {
+                    "name": "燃烧区域",
+                    "id": "disaster_area_rsqy",
+                    "src": "static/images/plot/tools/disaster/rsqy",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "rectangle",
+                        "mainShape": {
+                            "backgroundImage": {
+                                "src": "data:image/svg+xml;utf8,<svg version='1.1' width='16' height='16' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16;' xml:space='preserve'><style type='text/css'>.st0{fill:none;stroke:red;stroke-width:2;stroke-miterlimit:10;}</style><rect class='st0' width='16' height='16'/></svg>",
+                                "fill": "none",
+                                "stroke": "red",
+                                "width": 16,
+                                "height": 16
+                            },
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "fill": "#ffffff",
+                            "fillPatternRotation": 45,
+                            "fillPatternRepeat": "repeat",
+                            "fillPriority": "pattern"
+                        }
+                    }
+                },
+                {
+                    "name": "充烟区域",
+                    "id": "disaster_area_cyqy",
+                    "src": "static/images/plot/tools/disaster/cyqy",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "rectangle",
+                        "mainShape": {
+                            "backgroundImage": {
+                                "src": "data:image/svg+xml;utf8,<svg version='1.1' width='16' height='16' id='svg6' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16;' xml:space='preserve'><style type='text/css'>.st0{fill:none;stroke:red;stroke-width:2;stroke-miterlimit:10;}</style><line class='st0' x1='0' y1='0' x2='16' y2='0'/></svg>",
+                                "fill": "none",
+                                "stroke": "red",
+                                "width": 16,
+                                "height": 16
+                            },
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "fill": "#ffffff",
+                            "fillPatternRotation": 45,
+                            "fillPatternRepeat": "repeat",
+                            "fillPriority": "pattern"
+                        }
+                    }
+                },
+                {
+                    "name": "易燃液体覆盖区",
+                    "id": "disaster_area_yrytfgq",
+                    "src": "static/images/plot/tools/disaster/yrytfgq",
+                    "type": "area",
+                    "style": {
+                        "shapeType": "rectangle",
+                        "mainShape": {
+                            "backgroundImage": {
+                                "src": "data:image/svg+xml;utf8,<svg version='1.1' width='16' height='16' id='svg7' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 32 16' style='enable-background:new 0 0 32 16;' xml:space='preserve'><style type='text/css'>.st0{fill:none;stroke:red;stroke-width:2;stroke-miterlimit:10;}</style><line class='st0' x1='0' y1='0' x2='16' y2='0'/><line class='st0' x1='16' y1='16' x2='32' y2='16'/></svg>",
+                                "fill": "none",
+                                "stroke": "red",
+                                "width": 16,
+                                "height": 16
+                            },
+                            "stroke": "red",
+                            "strokeWidth": 4,
+                            "fill": "#ffffff",
+                            "fillPatternRepeat": "repeat",
+                            "fillPriority": "pattern"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "disaster_direction",
+            "title": "方向",
+            "children": [{
+                "name": "火势蔓延方向",
+                "id": "disaster_direction_hsmyfx",
+                "src": "static/images/plot/tools/disaster/hsmyfx",
+                "type": "icon",
+                "style": {
+                    "mainShape": {},
+                    "textShape": {
+                        "text": "",
+                        "fontFamily": "simsun",
+                        "fill": "red",
+                        "angleFixed": false
+                    }
+                }
+            }]
+        }
+    ]
+}]

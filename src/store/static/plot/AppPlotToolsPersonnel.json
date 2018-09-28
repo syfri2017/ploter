@@ -1,0 +1,209 @@
+[{
+    "type": "personnel",
+    "typeName": "人物",
+    "category": [{
+            "name": "personnel",
+            "title": "全部",
+            "children": [
+                {
+                    "name": "总指挥部",
+                    "id": "personnel_zzhb",
+                    "src": "static/images/plot/tools/personnel/zzhb",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "总指挥部",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "总指挥",
+                    "id": "personnel_zzh",
+                    "src": "static/images/plot/tools/personnel/zzh",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "总指挥",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "前沿指挥部",
+                    "id": "personnel_qyzhb",
+                    "src": "static/images/plot/tools/personnel/qyzhb",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "前沿指挥部",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "现场指挥员",
+                    "id": "personnel_xczhy",
+                    "src": "static/images/plot/tools/personnel/xczhy",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "现场指挥员",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "消防员",
+                    "id": "personnel_xfy",
+                    "src": "static/images/plot/tools/personnel/xfy",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "消防员",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "企业消防员",
+                    "id": "personnel_qyxfy",
+                    "src": "static/images/plot/tools/personnel/qyxfy",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "企业消防员",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "搜救犬",
+                    "id": "personnel_sjq",
+                    "src": "static/images/plot/tools/personnel/sjq",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "搜救犬",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "工程技术人员",
+                    "id": "personnel_gcjsry",
+                    "src": "static/images/plot/tools/personnel/gcjsry",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "工程技术人员",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "警察",
+                    "id": "personnel_jc",
+                    "src": "static/images/plot/tools/personnel/jc",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "警察",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "伤员",
+                    "id": "personnel_sy",
+                    "src": "static/images/plot/tools/personnel/sy",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "伤员",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                },
+                {
+                    "name": "亡人",
+                    "id": "personnel_wr",
+                    "src": "static/images/plot/tools/personnel/wr",
+                    "type": "icon",
+                    "style": {
+                        "mainShape": {
+                            "width": 64,
+                            "height": 64
+                        },
+                        "textShape": {
+                            "text": "亡人",
+                            "fontFamily": "simsun",
+                            "fill": "red",
+                            "angleFixed": false
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}]
