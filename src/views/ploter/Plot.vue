@@ -17,8 +17,8 @@
                 size="small"
             >
                 <Button type="text" icon="plus" @click="onCreate">新建</Button>
-                <Button type="text" icon="folder" @click="onSelectFile">打开</Button>
-                <Button type="text" icon="checkmark" @click="onSave">保存</Button>
+                <!-- <Button type="text" icon="folder" @click="onSelectFile">打开</Button> -->
+                <Button type="text" icon="checkmark" @click="openRenameModel">保存</Button>
                 <Button type="text" icon="archive" @click="onExport">导出</Button>
                 <Button type="text" icon="gear-b" @click="openSettingModel">设置</Button>
             </ButtonGroup>
@@ -54,6 +54,12 @@
             @evtSaveSetting="onSaveSetting"
             @evtCancelSetting="showSettingModel = false"
         ></AppPloterSettingModel>
+        <!-- 标绘命名窗 -->
+        <AppPloterRenameModel
+            :show="showRenameModel"
+            @evtSaveSetting="onSave"
+            @evtCancelSetting="showRenameModel = false"
+        ></AppPloterRenameModel>
     </Content>
     <Footer class="app-footer app-state-bar">
         <AppPloterBBarMessage
@@ -78,8 +84,7 @@
         exitPlotTool,
         deleteShape,
         pasteShape,
-        downloadURI,
-        downloadBlob
+        downloadURI
     } from './draw/utils'
     import {
         Base64
@@ -94,13 +99,14 @@
     import appPloterBBarStageAttr from './bbar/StageAttr'
 
     import appPloterSettingModel from './Setting'
+    import appPloterRenameModel from './rename'
 
     import appPloterPanelLayers from './panel/Layers'
     import appPloterFeatures from './panel/Features'
 
     import appPloterTools from './Tools'
     import appPloterToolsImportImg from './Tools/ImportImg'
-    
+    import API from '../../api/api'
     export default {
         name: 'AppPloterMain',
         components: {
@@ -112,11 +118,13 @@
             'AppPloterBBarCoordinate': appPloterBBarCoordinate,
             'AppPloterBBarStageAttr': appPloterBBarStageAttr,
             'AppPloterSettingModel': appPloterSettingModel,
+            'AppPloterRenameModel': appPloterRenameModel,
             'AppPloterTools': appPloterTools,
             'AppPloterToolsImportImg': appPloterToolsImportImg
         },
         data () {
             return {
+                bhname: '',
                 stage: null,
                 currentPlotTool: null,
                 currentPlotActiveItem: null,
@@ -127,6 +135,7 @@
                     y: 0
                 },
                 showSettingModel: false,
+                showRenameModel: false,
                 stageOriginalSize: null
             }
         },
@@ -175,7 +184,7 @@
             }
         },
         methods: {
-            onCreate () {
+            onCreate (val) {
                 if (this.stage) {
                     const warn = confirm('现在执行新建操作将放弃对当前画布做出的修改，\n点击确认按钮前请确认您的标绘成果已经保存。')
                     if (warn === true) {
@@ -188,6 +197,10 @@
                 this.stage = stage
                 this.initPloterEvent()
                 this.setStageLayout()
+                if (val === 'editInit') {
+                    this.onOpenBhnr(editbhnr)
+                }
+                // this.onOpenBhnr(ss)
             },
             onSelectFile () {
                 this.$refs.loadInput.click()
@@ -201,7 +214,7 @@
                         const content = e.target.result.replace('data:;base64,', '')
                         const stageData = JSON.parse(Base64.decode(content))
                         if (!stageData.attrs.mplot) {
-                            alert('文件无效，请选择.mplot后缀的云帆标绘文件')
+                            alert('文件无效，请选择.mplot后缀的标绘文件')
                             return
                         }
                         if (me.stage) {
@@ -217,13 +230,54 @@
                     alert('您的浏览器版本太低，请升级。')
                 }
             },
-            onSave () {
+            onOpenBhnr (val) {
+                // debugger
+                const stageData = JSON.parse(Base64.decode(val))
+                const me = this
+                if (typeof FileReader === 'function') {
+                    if (me.stage) {
+                        const warn = confirm('现在打开标绘文件将放弃对当前画布做出的修改，\n点击确认按钮前请确认您的标绘成果已经保存。')
+                        if (warn === true) {
+                            me.initStageData(stageData)
+                        }
+                    }
+                    this.$refs.loadInput.value = ''
+                    // reader.readAsDataURL(bhnr)
+                } else {
+                    alert('您的浏览器版本太低，请升级。')
+                }
+            },
+            onSave (val) {
                 this.stage.fire('evt-stop')
                 exitPlotTool(this.stage)
                 this.currentPlotTool = null
                 this.currentPlotActiveItem = null
                 const jsonData = this.stage.toJSON()
-                downloadBlob(jsonData, '消防标绘-原稿.mplot')
+                // debugger
+                let param = new FormData() // 创建form对象
+                param.append('wjm', val + '.mplot')// 通过append向form对象添加数据
+                param.append('kzm', '.mplot')
+                param.append('zddwid', ewbhData.zddwid)
+                param.append('bhnr', jsonData)
+                if (ewbhData.type === 'XZ') {
+                    param.append('cjrid', ewbhData.cjrid)
+                    param.append('cjrmc', ewbhData.cjrmc)
+                    param.append('jdh', ewbhData.jdh)
+                } else if (ewbhData.type === 'BJ' || ewbhData.type === 'editInit') {
+                    param.append('uuid', ewbhData.uuid)
+                    param.append('xgrid', ewbhData.xgrid)
+                    param.append('xgrmc', ewbhData.xgrmc)
+                }
+                param.url = 'http://localhost/dpapi/ewbh/save'
+                API.getImportImgData(param).then((res) => {
+                    this.showRenameModel = false
+                    if (res.result > 0) {
+                        alert('保存成功')
+                    }
+                }, (err) => {
+                    console.log(err)
+                })
+                // downloadBlob(jsonData, '消防标绘-原稿.mplot')
             },
             onExport () {
                 this.stage.fire('evt-stop')
@@ -235,6 +289,9 @@
             },
             openSettingModel () {
                 this.showSettingModel = true
+            },
+            openRenameModel () {
+                this.showRenameModel = true
             },
             onSaveSetting (setting) {
                 this.showSettingModel = false
@@ -416,4 +473,19 @@
             // }
         }
     }
+    // var ss = 'eyJhdHRycyI6eyJ3aWR0aCI6MTIwMCwiaGVpZ2h0Ijo4MDAsIm1wbG90IjoiMC40LjAifSwiY2xhc3NOYW1lIjoiU3RhZ2UiLCJjaGlsZHJlbiI6W3siYXR0cnMiOnsibmFtZSI6ImJhY2tncm91bmRMYXllciJ9LCJjbGFzc05hbWUiOiJMYXllciIsImNoaWxkcmVuIjpbeyJhdHRycyI6eyJuYW1lIjoic2hhcGVXcmFwIiwiX3NoYXBlQ2ZnIjp7Im5hbWUiOiLlupXlm74iLCJpZCI6ImJhY2tncm91bmQiLCJ0eXBlIjoiaW1hZ2UiLCJzdHlsZSI6e319LCJhY3RpdmFibGUiOnRydWV9LCJjbGFzc05hbWUiOiJHcm91cCIsImNoaWxkcmVuIjpbeyJhdHRycyI6eyJuYW1lIjoic2hhcGVHcm91cCIsIl9pc0RyYXduIjp0cnVlfSwiY2xhc3NOYW1lIjoiR3JvdXAiLCJjaGlsZHJlbiI6W3siYXR0cnMiOnsiaWQiOiJzdGFnZUJhY2tncm91bmQiLCJuYW1lIjoiYmFja2dyb3VuZFNoYXBlIiwid2lkdGgiOjEyMDAsImhlaWdodCI6ODAwLCJmaWxsIjoiI2ZmZiJ9LCJjbGFzc05hbWUiOiJSZWN0In1dfSx7ImF0dHJzIjp7Im5hbWUiOiJpbnRlcmFjdGl2ZUdyb3VwIn0sImNsYXNzTmFtZSI6Ikdyb3VwIiwiY2hpbGRyZW4iOltdfV19LHsiYXR0cnMiOnsibmFtZSI6InNoYXBlV3JhcCIsIl9zaGFwZUNmZyI6eyJuYW1lIjoi5bqV5Zu+IiwiaWQiOiJiYWNrZ3JvdW5kIiwidHlwZSI6ImltYWdlIiwic3R5bGUiOnt9fSwiYWN0aXZhYmxlIjp0cnVlfSwiY2xhc3NOYW1lIjoiR3JvdXAiLCJjaGlsZHJlbiI6W3siYXR0cnMiOnsibmFtZSI6InNoYXBlR3JvdXAiLCJfaXNEcmF3biI6dHJ1ZX0sImNsYXNzTmFtZSI6Ikdyb3VwIiwiY2hpbGRyZW4iOlt7ImF0dHJzIjp7ImlkIjoic3RhZ2VCYWNrZ3JvdW5kIiwibmFtZSI6ImJhY2tncm91bmRTaGFwZSIsIndpZHRoIjoxMjAwLCJoZWlnaHQiOjgwMCwiZmlsbCI6IiNmZmYifSwiY2xhc3NOYW1lIjoiUmVjdCJ9XX0seyJhdHRycyI6eyJuYW1lIjoiaW50ZXJhY3RpdmVHcm91cCJ9LCJjbGFzc05hbWUiOiJHcm91cCIsImNoaWxkcmVuIjpbXX1dfV19LHsiYXR0cnMiOnsibmFtZSI6ImxlZ2VuZExheWVyIn0sImNsYXNzTmFtZSI6IkxheWVyIiwiY2hpbGRyZW4iOltdfSx7ImF0dHJzIjp7Im5hbWUiOiJzaGFwZXNMYXllciJ9LCJjbGFzc05hbWUiOiJMYXllciIsImNoaWxkcmVuIjpbXX1dfQ=='
+    var ewbhData = {}
+    var editbhnr = ''
+    // 接收主页面传来的标绘信息
+    window.addEventListener('message', function (event) {
+        // debugger
+        if (event.data !== '') {
+            ewbhData = event.data
+            if (event.data.type === 'editInit') {
+                this.bhmc = ewbhData.wjm
+                editbhnr = event.data.bhnr
+                this.onCreate(event.data.type)
+            }
+        }
+    }, false)
 </script>

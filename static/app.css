@@ -497,12 +497,12 @@ code {
 
 .app-ploter-tools-after-btns {
   display: flex !important;
-  width: 320px; }
+  width: 250px; }
   .app-ploter-tools-after-btns .ivu-btn {
     flex: 1; }
 
 .app-ploter-tools-graphs {
-  margin-right: 8px;
+  margin-right: 5px;
   display: inline-block; }
   .app-ploter-tools-graphs .ivu-poptip {
     display: block; }

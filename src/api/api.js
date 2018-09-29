@@ -18,8 +18,8 @@ if (ENV.__ENV__ === 'development') {
 axios.defaults.timeout = _constants.AJAX_TIMEOUT
 axios.interceptors.request.use(function (config) {
     // TODO: 使用axios的全局拦截器在请求发出之前插入用于验证登陆的token
-    let handshakeModel = window.wrapHandshake.model
-    config.headers['Authorization'] = handshakeModel.accessToken
+    // let handshakeModel = window.wrapHandshake.model
+    // config.headers['Authorization'] = handshakeModel.accessToken
     // debugger
     return config
 }, function (err) {
