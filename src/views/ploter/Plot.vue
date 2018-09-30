@@ -282,12 +282,13 @@
                     param.append('cjrid', ewbhData.cjrid)
                     param.append('cjrmc', ewbhData.cjrmc)
                     param.append('jdh', ewbhData.jdh)
+                    param.url = 'http://localhost/dpapi/ewbh/save'
                 } else if (ewbhData.type === 'BJ' || ewbhData.type === 'editInit') {
                     param.append('uuid', ewbhData.uuid)
                     param.append('xgrid', ewbhData.xgrid)
                     param.append('xgrmc', ewbhData.xgrmc)
+                    param.url = 'http://localhost/dpapi/ewbh/edit'
                 }
-                param.url = 'http://localhost/dpapi/ewbh/save'
                 API.getImportImgData(param).then((res) => {
                     this.showRenameModel = false
                     if (res.result > 0) {
