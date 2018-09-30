@@ -146,6 +146,25 @@
         // },
         created () {
             drawLib.initLocalSetting()
+            var _this = this
+            // 接收主页面传来的标绘信息
+            window.addEventListener('message', function (event) {
+                // debugger
+                ewbhData = event.data
+                if (ewbhData.type === 'editInit') {
+                    this.bhmc = ewbhData.wjm
+                    let param1 = new FormData() // 创建form对象
+                    param1.append('uuid', ewbhData.uuid)
+                    param1.url = 'http://localhost/dpapi/ewbh/findByUuid'
+                    API.getImportImgData(param1).then((res) => {
+                        // debugger
+                        editbhnr = res.result.bhnr
+                        _this.onCreate()
+                    }, (err) => {
+                        console.log(err)
+                    })
+                }
+            }, false)
         },
         mounted () {
             const me = this
@@ -184,7 +203,8 @@
             }
         },
         methods: {
-            onCreate (val) {
+            onCreate () {
+                // debugger
                 if (this.stage) {
                     const warn = confirm('现在执行新建操作将放弃对当前画布做出的修改，\n点击确认按钮前请确认您的标绘成果已经保存。')
                     if (warn === true) {
@@ -197,10 +217,9 @@
                 this.stage = stage
                 this.initPloterEvent()
                 this.setStageLayout()
-                if (val === 'editInit') {
+                if (ewbhData.type === 'editInit') {
                     this.onOpenBhnr(editbhnr)
                 }
-                // this.onOpenBhnr(ss)
             },
             onSelectFile () {
                 this.$refs.loadInput.click()
@@ -473,19 +492,6 @@
             // }
         }
     }
-    // var ss = 'eyJhdHRycyI6eyJ3aWR0aCI6MTIwMCwiaGVpZ2h0Ijo4MDAsIm1wbG90IjoiMC40LjAifSwiY2xhc3NOYW1lIjoiU3RhZ2UiLCJjaGlsZHJlbiI6W3siYXR0cnMiOnsibmFtZSI6ImJhY2tncm91bmRMYXllciJ9LCJjbGFzc05hbWUiOiJMYXllciIsImNoaWxkcmVuIjpbeyJhdHRycyI6eyJuYW1lIjoic2hhcGVXcmFwIiwiX3NoYXBlQ2ZnIjp7Im5hbWUiOiLlupXlm74iLCJpZCI6ImJhY2tncm91bmQiLCJ0eXBlIjoiaW1hZ2UiLCJzdHlsZSI6e319LCJhY3RpdmFibGUiOnRydWV9LCJjbGFzc05hbWUiOiJHcm91cCIsImNoaWxkcmVuIjpbeyJhdHRycyI6eyJuYW1lIjoic2hhcGVHcm91cCIsIl9pc0RyYXduIjp0cnVlfSwiY2xhc3NOYW1lIjoiR3JvdXAiLCJjaGlsZHJlbiI6W3siYXR0cnMiOnsiaWQiOiJzdGFnZUJhY2tncm91bmQiLCJuYW1lIjoiYmFja2dyb3VuZFNoYXBlIiwid2lkdGgiOjEyMDAsImhlaWdodCI6ODAwLCJmaWxsIjoiI2ZmZiJ9LCJjbGFzc05hbWUiOiJSZWN0In1dfSx7ImF0dHJzIjp7Im5hbWUiOiJpbnRlcmFjdGl2ZUdyb3VwIn0sImNsYXNzTmFtZSI6Ikdyb3VwIiwiY2hpbGRyZW4iOltdfV19LHsiYXR0cnMiOnsibmFtZSI6InNoYXBlV3JhcCIsIl9zaGFwZUNmZyI6eyJuYW1lIjoi5bqV5Zu+IiwiaWQiOiJiYWNrZ3JvdW5kIiwidHlwZSI6ImltYWdlIiwic3R5bGUiOnt9fSwiYWN0aXZhYmxlIjp0cnVlfSwiY2xhc3NOYW1lIjoiR3JvdXAiLCJjaGlsZHJlbiI6W3siYXR0cnMiOnsibmFtZSI6InNoYXBlR3JvdXAiLCJfaXNEcmF3biI6dHJ1ZX0sImNsYXNzTmFtZSI6Ikdyb3VwIiwiY2hpbGRyZW4iOlt7ImF0dHJzIjp7ImlkIjoic3RhZ2VCYWNrZ3JvdW5kIiwibmFtZSI6ImJhY2tncm91bmRTaGFwZSIsIndpZHRoIjoxMjAwLCJoZWlnaHQiOjgwMCwiZmlsbCI6IiNmZmYifSwiY2xhc3NOYW1lIjoiUmVjdCJ9XX0seyJhdHRycyI6eyJuYW1lIjoiaW50ZXJhY3RpdmVHcm91cCJ9LCJjbGFzc05hbWUiOiJHcm91cCIsImNoaWxkcmVuIjpbXX1dfV19LHsiYXR0cnMiOnsibmFtZSI6ImxlZ2VuZExheWVyIn0sImNsYXNzTmFtZSI6IkxheWVyIiwiY2hpbGRyZW4iOltdfSx7ImF0dHJzIjp7Im5hbWUiOiJzaGFwZXNMYXllciJ9LCJjbGFzc05hbWUiOiJMYXllciIsImNoaWxkcmVuIjpbXX1dfQ=='
     var ewbhData = {}
     var editbhnr = ''
-    // 接收主页面传来的标绘信息
-    window.addEventListener('message', function (event) {
-        // debugger
-        if (event.data !== '') {
-            ewbhData = event.data
-            if (event.data.type === 'editInit') {
-                this.bhmc = ewbhData.wjm
-                editbhnr = event.data.bhnr
-                this.onCreate(event.data.type)
-            }
-        }
-    }, false)
 </script>

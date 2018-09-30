@@ -1,7 +1,7 @@
 import _constants from '../common/constants'
 // import utils from '../common/utils'
 import axios from 'axios'
-import qs from 'qs'
+// import qs from 'qs'
 
 /* axios 配置 */
 let ENV = require('../../build/config/ENV')
@@ -32,7 +32,7 @@ const HEAD_FORM_URLENCODED = {
     }
 }
 // const HEAD_FORM_DATA = {
-//     headers: {
+//     headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
 //         'Content-Type': 'multipart/form-data'
 //     }
 // }
@@ -40,7 +40,7 @@ const HEAD_FORM_URLENCODED = {
 export default {
     getImportImgData: (params) => {
         return new Promise((resolve, reject) => {
-            axios.post(params.url, qs.stringify(params.params), HEAD_FORM_URLENCODED).then(function (response) {
+            axios.post(params.url, params, HEAD_FORM_URLENCODED).then(function (response) {
                 resolve(response.data)
             }).catch(function (error) {
                 reject(error)
