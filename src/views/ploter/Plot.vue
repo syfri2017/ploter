@@ -151,8 +151,8 @@
             window.addEventListener('message', function (event) {
                 // debugger
                 ewbhData = event.data
+                _this.bhmc = ewbhData.wjm
                 if (ewbhData.type === 'editInit') {
-                    this.bhmc = ewbhData.wjm
                     let param1 = new FormData() // 创建form对象
                     param1.append('uuid', ewbhData.uuid)
                     param1.url = 'http://localhost/dpapi/ewbh/findByUuid'
@@ -282,6 +282,7 @@
                     param.append('cjrid', ewbhData.cjrid)
                     param.append('cjrmc', ewbhData.cjrmc)
                     param.append('jdh', ewbhData.jdh)
+                    param.append('datasource', ewbhData.datasource)
                     param.url = 'http://localhost/dpapi/ewbh/save'
                 } else if (ewbhData.type === 'BJ' || ewbhData.type === 'editInit') {
                     param.append('uuid', ewbhData.uuid)
