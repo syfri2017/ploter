@@ -163,6 +163,8 @@
                     }, (err) => {
                         console.log(err)
                     })
+                } else {
+                    _this.onCreate()
                 }
             }, false)
         },
@@ -205,13 +207,14 @@
         methods: {
             onCreate () {
                 // debugger
-                if (this.stage) {
-                    const warn = confirm('现在执行新建操作将放弃对当前画布做出的修改，\n点击确认按钮前请确认您的标绘成果已经保存。')
-                    if (warn === true) {
-                        this.stage.destroy()
+                if (ewbhData !== '' && ewbhData.type !== 'addInit' && ewbhData.type !== 'editInit') {
+                    if (this.stage) {
+                        const warn = confirm('现在执行新建操作将放弃对当前画布做出的修改，\n点击确认按钮前请确认您的标绘成果已经保存。')
+                        if (warn === true) {
+                            this.stage.destroy()
+                        }
                     }
                 }
-
                 const stageData = drawLib.createEmptyStageData()
                 const stage = Konva.Node.create(stageData, '.app-ploter-main-canvas')
                 this.stage = stage
@@ -220,6 +223,8 @@
                 if (ewbhData.type === 'editInit') {
                     this.onOpenBhnr(editbhnr)
                 }
+                ewbhData.type = 'XZ'
+                ewbhData.type = 'BJ'
             },
             onSelectFile () {
                 this.$refs.loadInput.click()
@@ -255,10 +260,7 @@
                 const me = this
                 if (typeof FileReader === 'function') {
                     if (me.stage) {
-                        const warn = confirm('现在打开标绘文件将放弃对当前画布做出的修改，\n点击确认按钮前请确认您的标绘成果已经保存。')
-                        if (warn === true) {
-                            me.initStageData(stageData)
-                        }
+                        me.initStageData(stageData)
                     }
                     this.$refs.loadInput.value = ''
                     // reader.readAsDataURL(bhnr)
