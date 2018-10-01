@@ -10,17 +10,17 @@
         @on-cancel="onCancel">
         <Form :model="setting" :label-width="80" class="app-ploter-home-create-form">
             <FormItem label="画布预设">
-                <Row>
-                    <Col span="4" class="app-ploter-home-create-form-label">宽度:</Col>
-                    <Col span="6">
+                <Row style="margin-bottom: 5px;">
+                    <Col span="3" class="app-ploter-home-create-form-label">宽度:</Col>
+                    <Col span="7">
                         <InputNumber
                         :min="320"
                         :step="10"
                         v-model="setting.stage.width"></InputNumber>
                     </Col>
                     <Col span="2">px</Col>
-                    <Col span="4" class="app-ploter-home-create-form-label">高度:</Col>
-                    <Col span="6">
+                    <Col span="3" class="app-ploter-home-create-form-label">高度:</Col>
+                    <Col span="7">
                         <InputNumber
                         :min="320"
                         :step="10"
@@ -29,7 +29,7 @@
                     <Col span="2">px</Col>
                 </Row>
                 <Row>
-                    <Col span="4" class="app-ploter-home-create-form-label">底色:</Col>
+                    <Col span="3" class="app-ploter-home-create-form-label">底色:</Col>
                     <Col span="8">
                         <ColorPicker
                             v-model="setting.stage.fill"
@@ -40,8 +40,8 @@
             </FormItem>
             <FormItem label="图标预设">
                 <Row>
-                    <Col span="4" class="app-ploter-home-create-form-label">宽度:</Col>
-                    <Col span="6">
+                    <Col span="3" class="app-ploter-home-create-form-label">宽度:</Col>
+                    <Col span="7">
                         <InputNumber
                         :min="16"
                         :max="160"
@@ -49,8 +49,8 @@
                         v-model="setting.icon.width"></InputNumber>
                     </Col>
                     <Col span="2">px</Col>
-                    <Col span="4" class="app-ploter-home-create-form-label">高度:</Col>
-                    <Col span="6">
+                    <Col span="3" class="app-ploter-home-create-form-label">高度:</Col>
+                    <Col span="7">
                         <InputNumber
                         :min="16"
                         :max="160"

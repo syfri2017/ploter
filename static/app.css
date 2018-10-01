@@ -765,3 +765,8 @@ code {
   margin-left: 16px; }
   .app-status-bar-stageattr-zoom-slider .ivu-slider-wrap {
     margin: 14px 0; }
+
+    .ivu-btn-large {
+      padding: 7px 15px !important;
+      font-size: 12px !important;
+  }
