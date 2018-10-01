@@ -2,7 +2,7 @@
     <Modal
         class="app-ploter-setting-model"
         v-model="showModel"
-        title="标绘文件命名"
+        title="二维标绘文件名称"
         width="300"
         :mask-closable="false"
         :closable="false"
