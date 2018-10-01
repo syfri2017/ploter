@@ -32,7 +32,7 @@ const HEAD_FORM_URLENCODED = {
     }
 }
 // const HEAD_FORM_DATA = {
-//     headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+//     headers: { 'Content-Type':
 //         'Content-Type': 'multipart/form-data'
 //     }
 // }

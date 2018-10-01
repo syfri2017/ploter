@@ -640,8 +640,8 @@ code {
 
 .app-ploter-feature-header {
   display: flex;
-  height: 40px;
-  line-height: 40px;
+  height: 35px;
+  line-height: 35px;
   background-color: #efefef;
   border-bottom: 1px solid #eaeaea; }
 
@@ -654,7 +654,7 @@ code {
   padding: 0 8px; }
 
 .app-ploter-feature-body {
-  padding: 8px; }
+  padding: 7px; }
   .app-ploter-feature-body .moft-fieldset {
     margin: 0 0 8px 0 !important; }
     .app-ploter-feature-body .moft-fieldset:last-child {
@@ -663,7 +663,7 @@ code {
     font-size: 14px !important;
     font-weight: bold; }
   .app-ploter-feature-body .moft-fieldset-body {
-    padding: 4px 8px 8px; }
+    padding: 0 8px 8px; }
   .app-ploter-feature-body .ivu-row {
     line-height: 24px;
     margin-bottom: 8px; }
