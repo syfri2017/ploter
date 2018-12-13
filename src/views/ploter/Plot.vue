@@ -163,7 +163,7 @@
                     }, (err) => {
                         console.log(err)
                     })
-                } else {
+                } else if (ewbhData.type === 'addInit') {
                     _this.onCreate()
                 }
             }, false)
