@@ -275,7 +275,7 @@
                 this.currentPlotTool = null
                 this.currentPlotActiveItem = null
                 const jsonData = this.stage.toJSON()
-                debugger
+                // debugger
                 let param = new FormData() // 创建form对象
                 param.append('wjm', val + '.mplot')// 通过append向form对象添加数据
                 param.append('kzm', '.mplot')
